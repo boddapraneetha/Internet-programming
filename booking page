@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #007bff;
+    }
+    p {
+      font-size: 18px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Booking Confirmed!</h1>
+  <p>Your booking has been successfully confirmed.</p>
+  <p>Thank you for choosing our service.</p>
+  <a href="login.html" class="button">Back to Home</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image Example</title>
+<style>
+    body {
+        background-image: url('Abstract-Website-Background.jpg');
+        background-size: cover; /* or "contain" depending on your needs */
+        background-repeat: no-repeat;
+        /* optional: add more styles here */
+    }
+</style>
+</head>
+<body>
+    <!-- Your content goes here -->
+</body>
+</html>
