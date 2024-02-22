@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=5.0">
+  <title>User Login</title>
+  <style>
+    body {
+      font-family: Arial black, sans-serif;
+      padding: 200;
+    }
+    label {
+      margin-bottom: 5px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>User Login</h1>
+    <form action="login.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <a href="calendar.html" class="button black">SUBMIT</a>
+
+    </form>
+  </center>
+  </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image Example</title>
+<style>
+    body {
+        background-image: url('Abstract-Website-Background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+</body>
+</html>
