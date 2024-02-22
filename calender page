@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar 2024</title>
+  <style>
+    /* Calendar styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .calendar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      list-style: none;
+      padding: 0;
+    }
+    .month {
+      margin-bottom: 20px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .month-title {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .days {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+    .day {
+      width: calc(100% / 7);
+      padding: 10px;
+      box-sizing: border-box;
+      border-right: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      text-align: center;
+      cursor: pointer;
+    }
+    .day:last-child {
+      border-right: none;
+    }
+    .selected {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calendar 2024</h1>
+  <ul class="calendar">
+  </ul>
+
+  <script>
+    function createCalendar(year) {
+      var calendar = document.querySelector('.calendar');
+      for (var month = 0; month < 12; month++) {
+        var monthElement = document.createElement('li');
+        monthElement.classList.add('month');
+        var monthTitle = document.createElement('div');
+        monthTitle.classList.add('month-title');
+        monthTitle.textContent = new Date(year, month, 1).toLocaleString('default', { month: 'long' }) + ' ' + year;
+        monthElement.appendChild(monthTitle);
+
+        var daysElement = document.createElement('ul');
+        daysElement.classList.add('days');
+        var daysInMonth = new Date(year, month + 1, 0).getDate();
+        for (var day = 1; day <= daysInMonth; day++) {
+          var dayElement = document.createElement('li');
+          dayElement.classList.add('day');
+          dayElement.textContent = day;
+          dayElement.setAttribute('data-date', new Date(year, month, day).toISOString().split('T')[0]); // Set data attribute for date
+          daysElement.appendChild(dayElement);
+        }
+        monthElement.appendChild(daysElement);
+        calendar.appendChild(monthElement);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      createCalendar(2024);
+
+      var days = document.querySelectorAll('.day');
+      days.forEach(function(day) {
+        day.addEventListener('click', function() {
+          days.forEach(function(d) {
+            d.classList.remove('selected');
+          });
+          this.classList.add('selected');
+          var selectedDate = this.getAttribute('data-date');
+          console.log('Selected date:', selectedDate);
+        });
+      });
+    });
+  </script>
+  <center><a href="details.html">submit</a></center>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image Example</title>
+<style>
+    body {
+        background-image: url('Abstract-Website-Background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+</body>
+</html>
