@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .panel-heading {
+            background-color: #de5f0a;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .panel-body {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .panel-footer {
+            background-color: #0fe73a;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"], {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .radio-inline {
+            margin-right: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+        }
+        .radio-inline {
+    display: inline-block; /* Display radio buttons inline */
+    margin-right: 20px;
+    margin-bottom: 10px; /* Add margin to separate each option */
+}
+
+
+    </style>
+</head>
+<body>
+    <form action="inser.php" method="post">
+    </form>
+        <center>
+        <div class="container">
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                      <h1>Registration Form</h1>
+                    </div>
+                    <div class="panel panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstname" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber">Phone Number</label>
+                                <input type="text" class="form-control" id="phonenumber" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" class="form-control" id="username" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="Password" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <div>
+                                    <label for="male" class="radio-inline"><input type="radio" name="gender" id="male">Male</label>
+                                    <label for="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</label>
+                                    <label for="others" class="radio-inline"><input type="radio" name="gender" id="others">Others</label>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <small>&copy; praneetha</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
