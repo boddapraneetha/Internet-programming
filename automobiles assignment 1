@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Showroom</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .header h1 {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0;
+    }
+    .brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .brand {
+      flex-basis: 45%;
+      margin-bottom: 20px;
+    }
+    .models {
+      flex-basis: 45%;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    .models ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .models li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>praneetha automobiles pvt.ltd.</h1>
+    </div>
+    <div class="brands">
+      <div class="brand">
+        <h2>Mahindra</h2>
+      </div>
+      <div class="models">
+        <ul>
+          <li>XUV300</li>
+          <li>Scorpio</li>
+          <li>Thar</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <h2>Suzuki</h2>
+      </div>
+      <div class="models">
+        <ul>
+          <li>Hayabusa</li>
+          <li>Gixxer SF</li>
+          <li>Access 125</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <h2>TVS</h2>
+      </div>
+      <div class="models">
+        <ul>
+          <li>Apache RTR 160 4V</li>
+          <li>NTORQ 125</li>
+          <li>Jupiter</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <h2>Yamaha</h2>
+      </div>
+      <div class="models">
+        <ul>
+          <li>YZF R15 V3</li>
+          <li>FZ S V3</li>
+          <li>MT-15</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+"C:\Users\praneetha\OneDrive\Pictures\Screenshots\Screenshot 2024-02-22 085818.png"
